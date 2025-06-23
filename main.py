@@ -68,7 +68,7 @@ prompt_template = ChatPromptTemplate.from_messages(
 )
 
 # Initialize the Google Gemini Pro model via LangChain
-llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.0)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.0)
 
 # The output parser cleans up the LLM's response to a simple string
 output_parser = StrOutputParser()
